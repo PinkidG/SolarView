@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B22c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CTf-aG-5y8"/>
+                        <viewControllerLayoutGuide type="bottom" id="2iH-ev-3wo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="http://pppinki.synology.me/SolarView/index.htm" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ezr-EM-5if">
+                                <rect key="frame" x="156" y="146" width="288" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SolarView Watch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0g-wb-P2X">
+                                <rect key="frame" x="217" y="39" width="166" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="FWn-xW-pKy"/>
+                                    <constraint firstAttribute="height" constant="21" id="gFk-ZL-H8E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwr-jK-YDD">
+                                <rect key="frame" x="226" y="184" width="149" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="cc6-NO-mPu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Speichern"/>
+                                <connections>
+                                    <action selector="saveButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Kma-ki-v1a"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Hinweis: Die App dient nur zur Einstellung für die Apple Watch App." translatesAutoresizingMaskIntoConstraints="NO" id="eni-t9-t3o">
+                                <rect key="frame" x="180" y="451" width="240" height="42"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="tNV-n7-kbR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vwz-et-W3J">
+                                <rect key="frame" x="251" y="395" width="98" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="pc8-8t-g9j"/>
+                                </constraints>
+                                <state key="normal" title="Online View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fCf-5L-zMC" kind="presentation" identifier="segueOnline" id="pu7-mk-4vw"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATr-Hu-Nio">
+                                <rect key="frame" x="174" y="236" width="252" height="150"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="252" id="wCh-uX-Gev"/>
+                                </constraints>
+                                <string key="text">Gebe die Web-Adresse oder Lokale Netzwerkadresse zu deiner, von der SolarView erstellten, "index.htm" ein.                                                                                                                     (Bsp.: https://pppinki.synology.me:500/SolarView/index.htm). Öffne zum speichern der Daten parallel die APPLE WATCH App und klicke auf "Speichern".</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Adresse:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvZ-bf-3XS">
+                                <rect key="frame" x="156" y="117" width="75" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="ffg-6b-dAX"/>
+                                    <constraint firstAttribute="height" constant="21" id="s1r-Av-1r8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ezr-EM-5if" firstAttribute="centerX" secondItem="Gwr-jK-YDD" secondAttribute="centerX" id="0iN-1k-bms"/>
+                            <constraint firstItem="ATr-Hu-Nio" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="9D2-eZ-jcA"/>
+                            <constraint firstItem="Gwr-jK-YDD" firstAttribute="top" secondItem="ezr-EM-5if" secondAttribute="bottom" constant="8" symbolic="YES" id="9a1-8E-DOn"/>
+                            <constraint firstItem="2iH-ev-3wo" firstAttribute="top" secondItem="eni-t9-t3o" secondAttribute="bottom" constant="107" id="EDT-53-dhX"/>
+                            <constraint firstItem="Vwz-et-W3J" firstAttribute="centerX" secondItem="eni-t9-t3o" secondAttribute="centerX" id="FYk-cv-Gwj"/>
+                            <constraint firstItem="ezr-EM-5if" firstAttribute="centerX" secondItem="z0g-wb-P2X" secondAttribute="centerX" id="HG7-Px-6it"/>
+                            <constraint firstItem="ATr-Hu-Nio" firstAttribute="centerX" secondItem="Vwz-et-W3J" secondAttribute="centerX" id="JNz-P0-RVF"/>
+                            <constraint firstItem="ezr-EM-5if" firstAttribute="top" secondItem="vvZ-bf-3XS" secondAttribute="bottom" constant="8" symbolic="YES" id="N76-Sl-Ew4"/>
+                            <constraint firstItem="z0g-wb-P2X" firstAttribute="top" secondItem="CTf-aG-5y8" secondAttribute="bottom" constant="19" id="NlN-xj-hrD"/>
+                            <constraint firstItem="vvZ-bf-3XS" firstAttribute="top" secondItem="z0g-wb-P2X" secondAttribute="bottom" constant="57" id="b4j-YU-Ae6"/>
+                            <constraint firstItem="eni-t9-t3o" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="eTJ-t4-QS3"/>
+                            <constraint firstItem="ATr-Hu-Nio" firstAttribute="top" secondItem="Gwr-jK-YDD" secondAttribute="bottom" constant="22" id="iUm-9i-dop"/>
+                            <constraint firstItem="Gwr-jK-YDD" firstAttribute="centerX" secondItem="ATr-Hu-Nio" secondAttribute="centerX" id="jn9-ZR-zSN"/>
+                            <constraint firstItem="Vwz-et-W3J" firstAttribute="top" secondItem="ATr-Hu-Nio" secondAttribute="bottom" constant="31" id="lT3-u1-1rz"/>
+                            <constraint firstItem="ezr-EM-5if" firstAttribute="leading" secondItem="vvZ-bf-3XS" secondAttribute="leading" id="qoP-Dy-yqF"/>
+                            <constraint firstItem="eni-t9-t3o" firstAttribute="top" secondItem="Vwz-et-W3J" secondAttribute="bottom" constant="26" id="vCx-YG-4kz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="adressTextField" destination="ezr-EM-5if" id="MyR-FM-p8w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444.375" y="473.23943661971828"/>
+        </scene>
+        <!--Online View Controller-->
+        <scene sceneID="wEK-FQ-5PB">
+            <objects>
+                <viewController id="fCf-5L-zMC" customClass="OnlineViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ycB-FY-D88"/>
+                        <viewControllerLayoutGuide type="bottom" id="hCa-O2-qKv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I2r-rY-E46">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6oD-jn-DQd">
+                                <rect key="frame" x="0.0" y="47" width="600" height="553"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="495" id="3I8-PR-1BS"/>
+                                    <constraint firstAttribute="width" constant="297" id="lV4-ye-9h8"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3I8-PR-1BS"/>
+                                        <exclude reference="lV4-ye-9h8"/>
+                                    </mask>
+                                </variation>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Online" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcP-DG-009">
+                                <rect key="frame" x="512" y="24" width="56" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="muJ-pl-kgE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.79273200757575757" blue="0.03995194330249794" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjS-as-hpb">
+                                <rect key="frame" x="0.0" y="20" width="83" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="fFs-2P-S5D"/>
+                                </constraints>
+                                <state key="normal" title="Zurück">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backAction:" destination="fCf-5L-zMC" eventType="touchUpInside" id="pPd-5N-TCn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hCa-O2-qKv" firstAttribute="top" secondItem="6oD-jn-DQd" secondAttribute="bottom" constant="42" id="6HF-h0-Evw"/>
+                            <constraint firstItem="tjS-as-hpb" firstAttribute="leading" secondItem="I2r-rY-E46" secondAttribute="leading" id="9Ov-yU-O0r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YcP-DG-009" secondAttribute="trailing" constant="16" id="DRz-U3-Yre"/>
+                            <constraint firstItem="tjS-as-hpb" firstAttribute="leading" secondItem="6oD-jn-DQd" secondAttribute="leading" id="NR9-yW-b7N"/>
+                            <constraint firstItem="6oD-jn-DQd" firstAttribute="top" secondItem="YcP-DG-009" secondAttribute="bottom" constant="8" symbolic="YES" id="NZ0-8Z-YU8"/>
+                            <constraint firstItem="YcP-DG-009" firstAttribute="top" secondItem="ycB-FY-D88" secondAttribute="bottom" constant="4" id="Nkh-4F-uyK"/>
+                            <constraint firstItem="6oD-jn-DQd" firstAttribute="bottom" secondItem="hCa-O2-qKv" secondAttribute="top" id="YRH-Xn-YmJ"/>
+                            <constraint firstItem="YcP-DG-009" firstAttribute="baseline" secondItem="tjS-as-hpb" secondAttribute="firstBaseline" id="Z38-AK-gmt"/>
+                            <constraint firstAttribute="trailing" secondItem="6oD-jn-DQd" secondAttribute="trailing" id="gvs-FM-2l4"/>
+                            <constraint firstItem="6oD-jn-DQd" firstAttribute="centerX" secondItem="I2r-rY-E46" secondAttribute="centerX" id="inG-Cq-NU3"/>
+                            <constraint firstItem="6oD-jn-DQd" firstAttribute="top" secondItem="YcP-DG-009" secondAttribute="bottom" constant="2" id="prt-Lj-QeV"/>
+                            <constraint firstItem="tjS-as-hpb" firstAttribute="baseline" secondItem="YcP-DG-009" secondAttribute="baseline" id="qUU-H7-jXv"/>
+                            <constraint firstItem="tjS-as-hpb" firstAttribute="top" secondItem="ycB-FY-D88" secondAttribute="bottom" id="tOU-FM-qsZ"/>
+                            <constraint firstItem="6oD-jn-DQd" firstAttribute="top" secondItem="tjS-as-hpb" secondAttribute="bottom" constant="3" id="zrd-j7-DnU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NZ0-8Z-YU8"/>
+                                <exclude reference="inG-Cq-NU3"/>
+                                <exclude reference="zrd-j7-DnU"/>
+                                <exclude reference="6HF-h0-Evw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="onlineView" destination="6oD-jn-DQd" id="af1-Wo-tIu"/>
+                        <outlet property="statusLabel" destination="YcP-DG-009" id="wr6-ui-6wo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQK-qV-dwo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1347" y="478"/>
+        </scene>
+    </scenes>
+</document>

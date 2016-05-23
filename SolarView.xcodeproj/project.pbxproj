@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF61C29D1BA483AA001883A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF61C29C1BA483AA001883A9 /* main.m */; };
+		BF61C2B01BA483AA001883A9 /* SolarView WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BF61C2AF1BA483AA001883A9 /* SolarView WatchKit App.app */; };
+		BF61C2B81BA483AA001883A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF61C2B71BA483AA001883A9 /* Assets.xcassets */; };
+		BF61C2BF1BA483AA001883A9 /* SolarView WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BF61C2BE1BA483AA001883A9 /* SolarView WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BF61C2CA1BA483AA001883A9 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF61C2C91BA483AA001883A9 /* ExtensionDelegate.m */; };
+		BF61C2CD1BA483AA001883A9 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF61C2CC1BA483AA001883A9 /* NotificationController.m */; };
+		BF61C2D21BA483AA001883A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF61C2D11BA483AA001883A9 /* Assets.xcassets */; };
+		BF61C2E31BA48400001883A9 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF61C2E21BA48400001883A9 /* InterfaceController.m */; };
+		BF61C2E51BA4847C001883A9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF61C2E41BA4847C001883A9 /* Interface.storyboard */; };
+		BF61C2EC1BA48507001883A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF61C2E71BA48507001883A9 /* AppDelegate.m */; };
+		BF61C2ED1BA48507001883A9 /* OnlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF61C2E91BA48507001883A9 /* OnlineViewController.m */; };
+		BF61C2EE1BA48507001883A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF61C2EB1BA48507001883A9 /* ViewController.m */; };
+		BF61C2F11BA4853E001883A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF61C2EF1BA4853E001883A9 /* LaunchScreen.xib */; };
+		BF61C2F21BA4853E001883A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF61C2F01BA4853E001883A9 /* Main.storyboard */; };
+		BFB241B81BA4A3D800BEFD44 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB241B71BA4A3D800BEFD44 /* GlanceController.m */; };
+		BFE70A971BA5998C00512ED0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE70A961BA5998C00512ED0 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF61C2B11BA483AA001883A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF61C2901BA483AA001883A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF61C2AE1BA483AA001883A9;
+			remoteInfo = "SolarView WatchKit App";
+		};
+		BF61C2C01BA483AA001883A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF61C2901BA483AA001883A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF61C2BD1BA483AA001883A9;
+			remoteInfo = "SolarView WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF61C2D91BA483AA001883A9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BF61C2BF1BA483AA001883A9 /* SolarView WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF61C2DD1BA483AA001883A9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BF61C2B01BA483AA001883A9 /* SolarView WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BF61C2981BA483AA001883A9 /* SolarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF61C29C1BA483AA001883A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF61C2AC1BA483AA001883A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF61C2AF1BA483AA001883A9 /* SolarView WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SolarView WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF61C2B71BA483AA001883A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF61C2B91BA483AA001883A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF61C2BE1BA483AA001883A9 /* SolarView WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SolarView WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF61C2C41BA483AA001883A9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		BF61C2C81BA483AA001883A9 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		BF61C2C91BA483AA001883A9 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		BF61C2CB1BA483AA001883A9 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		BF61C2CC1BA483AA001883A9 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		BF61C2D11BA483AA001883A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF61C2D31BA483AA001883A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF61C2E11BA48400001883A9 /* InterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		BF61C2E21BA48400001883A9 /* InterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		BF61C2E41BA4847C001883A9 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		BF61C2E61BA48507001883A9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF61C2E71BA48507001883A9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF61C2E81BA48507001883A9 /* OnlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlineViewController.h; sourceTree = "<group>"; };
+		BF61C2E91BA48507001883A9 /* OnlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnlineViewController.m; sourceTree = "<group>"; };
+		BF61C2EA1BA48507001883A9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BF61C2EB1BA48507001883A9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BF61C2EF1BA4853E001883A9 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		BF61C2F01BA4853E001883A9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BFB241B61BA4A3D800BEFD44 /* GlanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		BFB241B71BA4A3D800BEFD44 /* GlanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		BFE70A961BA5998C00512ED0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF61C2951BA483AA001883A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF61C2BB1BA483AA001883A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF61C28F1BA483AA001883A9 = {
+			isa = PBXGroup;
+			children = (
+				BF61C29A1BA483AA001883A9 /* SolarView */,
+				BF61C2B31BA483AA001883A9 /* SolarView WatchKit App */,
+				BF61C2C21BA483AA001883A9 /* SolarView WatchKit Extension */,
+				BF61C2991BA483AA001883A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF61C2991BA483AA001883A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF61C2981BA483AA001883A9 /* SolarView.app */,
+				BF61C2AF1BA483AA001883A9 /* SolarView WatchKit App.app */,
+				BF61C2BE1BA483AA001883A9 /* SolarView WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF61C29A1BA483AA001883A9 /* SolarView */ = {
+			isa = PBXGroup;
+			children = (
+				BF61C2EF1BA4853E001883A9 /* LaunchScreen.xib */,
+				BF61C2F01BA4853E001883A9 /* Main.storyboard */,
+				BF61C2E61BA48507001883A9 /* AppDelegate.h */,
+				BF61C2E71BA48507001883A9 /* AppDelegate.m */,
+				BF61C2E81BA48507001883A9 /* OnlineViewController.h */,
+				BF61C2E91BA48507001883A9 /* OnlineViewController.m */,
+				BF61C2EA1BA48507001883A9 /* ViewController.h */,
+				BF61C2EB1BA48507001883A9 /* ViewController.m */,
+				BF61C2AC1BA483AA001883A9 /* Info.plist */,
+				BFE70A961BA5998C00512ED0 /* Images.xcassets */,
+				BF61C29B1BA483AA001883A9 /* Supporting Files */,
+			);
+			path = SolarView;
+			sourceTree = "<group>";
+		};
+		BF61C29B1BA483AA001883A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF61C29C1BA483AA001883A9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF61C2B31BA483AA001883A9 /* SolarView WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				BF61C2E41BA4847C001883A9 /* Interface.storyboard */,
+				BF61C2B71BA483AA001883A9 /* Assets.xcassets */,
+				BF61C2B91BA483AA001883A9 /* Info.plist */,
+			);
+			path = "SolarView WatchKit App";
+			sourceTree = "<group>";
+		};
+		BF61C2C21BA483AA001883A9 /* SolarView WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BFB241B61BA4A3D800BEFD44 /* GlanceController.h */,
+				BFB241B71BA4A3D800BEFD44 /* GlanceController.m */,
+				BF61C2E11BA48400001883A9 /* InterfaceController.h */,
+				BF61C2E21BA48400001883A9 /* InterfaceController.m */,
+				BF61C2C81BA483AA001883A9 /* ExtensionDelegate.h */,
+				BF61C2C91BA483AA001883A9 /* ExtensionDelegate.m */,
+				BF61C2CB1BA483AA001883A9 /* NotificationController.h */,
+				BF61C2CC1BA483AA001883A9 /* NotificationController.m */,
+				BF61C2D11BA483AA001883A9 /* Assets.xcassets */,
+				BF61C2D31BA483AA001883A9 /* Info.plist */,
+				BF61C2C31BA483AA001883A9 /* Supporting Files */,
+			);
+			path = "SolarView WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		BF61C2C31BA483AA001883A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF61C2C41BA483AA001883A9 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF61C2971BA483AA001883A9 /* SolarView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF61C2DE1BA483AA001883A9 /* Build configuration list for PBXNativeTarget "SolarView" */;
+			buildPhases = (
+				BF61C2941BA483AA001883A9 /* Sources */,
+				BF61C2951BA483AA001883A9 /* Frameworks */,
+				BF61C2961BA483AA001883A9 /* Resources */,
+				BF61C2DD1BA483AA001883A9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF61C2B21BA483AA001883A9 /* PBXTargetDependency */,
+			);
+			name = SolarView;
+			productName = SolarView;
+			productReference = BF61C2981BA483AA001883A9 /* SolarView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF61C2AE1BA483AA001883A9 /* SolarView WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF61C2DA1BA483AA001883A9 /* Build configuration list for PBXNativeTarget "SolarView WatchKit App" */;
+			buildPhases = (
+				BF61C2AD1BA483AA001883A9 /* Resources */,
+				BF61C2D91BA483AA001883A9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF61C2C11BA483AA001883A9 /* PBXTargetDependency */,
+			);
+			name = "SolarView WatchKit App";
+			productName = "SolarView WatchKit App";
+			productReference = BF61C2AF1BA483AA001883A9 /* SolarView WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BF61C2BD1BA483AA001883A9 /* SolarView WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF61C2D61BA483AA001883A9 /* Build configuration list for PBXNativeTarget "SolarView WatchKit Extension" */;
+			buildPhases = (
+				BF61C2BA1BA483AA001883A9 /* Sources */,
+				BF61C2BB1BA483AA001883A9 /* Frameworks */,
+				BF61C2BC1BA483AA001883A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SolarView WatchKit Extension";
+			productName = "SolarView WatchKit Extension";
+			productReference = BF61C2BE1BA483AA001883A9 /* SolarView WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF61C2901BA483AA001883A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Philipp Pinkernelle";
+				TargetAttributes = {
+					BF61C2971BA483AA001883A9 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = D8KGW32URS;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					BF61C2AE1BA483AA001883A9 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = D8KGW32URS;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					BF61C2BD1BA483AA001883A9 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = D8KGW32URS;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = BF61C2931BA483AA001883A9 /* Build configuration list for PBXProject "SolarView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF61C28F1BA483AA001883A9;
+			productRefGroup = BF61C2991BA483AA001883A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF61C2971BA483AA001883A9 /* SolarView */,
+				BF61C2AE1BA483AA001883A9 /* SolarView WatchKit App */,
+				BF61C2BD1BA483AA001883A9 /* SolarView WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF61C2961BA483AA001883A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE70A971BA5998C00512ED0 /* Images.xcassets in Resources */,
+				BF61C2F11BA4853E001883A9 /* LaunchScreen.xib in Resources */,
+				BF61C2F21BA4853E001883A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF61C2AD1BA483AA001883A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF61C2E51BA4847C001883A9 /* Interface.storyboard in Resources */,
+				BF61C2B81BA483AA001883A9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF61C2BC1BA483AA001883A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF61C2D21BA483AA001883A9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF61C2941BA483AA001883A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF61C2EC1BA48507001883A9 /* AppDelegate.m in Sources */,
+				BF61C2ED1BA48507001883A9 /* OnlineViewController.m in Sources */,
+				BF61C2EE1BA48507001883A9 /* ViewController.m in Sources */,
+				BF61C29D1BA483AA001883A9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF61C2BA1BA483AA001883A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF61C2CA1BA483AA001883A9 /* ExtensionDelegate.m in Sources */,
+				BF61C2E31BA48400001883A9 /* InterfaceController.m in Sources */,
+				BF61C2CD1BA483AA001883A9 /* NotificationController.m in Sources */,
+				BFB241B81BA4A3D800BEFD44 /* GlanceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF61C2B21BA483AA001883A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF61C2AE1BA483AA001883A9 /* SolarView WatchKit App */;
+			targetProxy = BF61C2B11BA483AA001883A9 /* PBXContainerItemProxy */;
+		};
+		BF61C2C11BA483AA001883A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF61C2BD1BA483AA001883A9 /* SolarView WatchKit Extension */;
+			targetProxy = BF61C2C01BA483AA001883A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BF61C2D41BA483AA001883A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF61C2D51BA483AA001883A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF61C2D71BA483AA001883A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "SolarView WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.novachron.SolarView.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "cc49e787-b0ea-44ae-9079-93b6c157d27a";
+				SDKROOT = watchos;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		BF61C2D81BA483AA001883A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				GCC_OPTIMIZATION_LEVEL = s;
+				INFOPLIST_FILE = "SolarView WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.novachron.SolarView.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "cc49e787-b0ea-44ae-9079-93b6c157d27a";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		BF61C2DB1BA483AA001883A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SolarView WatchKit App/SolarView WatchKit App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				IBSC_MODULE = SolarView_WatchKit_Extension;
+				INFOPLIST_FILE = "SolarView WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = de.novachron.SolarView.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cc49e787-b0ea-44ae-9079-93b6c157d27a";
+				SDKROOT = watchos;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		BF61C2DC1BA483AA001883A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SolarView WatchKit App/SolarView WatchKit App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				IBSC_MODULE = SolarView_WatchKit_Extension;
+				INFOPLIST_FILE = "SolarView WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = de.novachron.SolarView.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cc49e787-b0ea-44ae-9079-93b6c157d27a";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		BF61C2DF1BA483AA001883A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: novaCHRON Zeitsysteme GmbH & Co. KG (D8KGW32URS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SolarView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.novachron.SolarView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cc49e787-b0ea-44ae-9079-93b6c157d27a";
+			};
+			name = Debug;
+		};
+		BF61C2E01BA483AA001883A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: novaCHRON Zeitsysteme GmbH & Co. KG (D8KGW32URS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SolarView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.novachron.SolarView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cc49e787-b0ea-44ae-9079-93b6c157d27a";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF61C2931BA483AA001883A9 /* Build configuration list for PBXProject "SolarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF61C2D41BA483AA001883A9 /* Debug */,
+				BF61C2D51BA483AA001883A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF61C2D61BA483AA001883A9 /* Build configuration list for PBXNativeTarget "SolarView WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF61C2D71BA483AA001883A9 /* Debug */,
+				BF61C2D81BA483AA001883A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF61C2DA1BA483AA001883A9 /* Build configuration list for PBXNativeTarget "SolarView WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF61C2DB1BA483AA001883A9 /* Debug */,
+				BF61C2DC1BA483AA001883A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF61C2DE1BA483AA001883A9 /* Build configuration list for PBXNativeTarget "SolarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF61C2DF1BA483AA001883A9 /* Debug */,
+				BF61C2E01BA483AA001883A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF61C2901BA483AA001883A9 /* Project object */;
+}

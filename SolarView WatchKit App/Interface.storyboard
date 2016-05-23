@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label alignment="center" text="SolarView" textAlignment="center" id="2x2-hZ-2R0"/>
+                        <separator alignment="left" id="OEC-X9-oT6">
+                            <color key="color" red="1" green="0.82763756849459358" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <label width="1" alignment="left" id="q1B-eg-7hL">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <separator alignment="left" alpha="0.29999999999999966" id="5m3-o0-1Ss"/>
+                        <label width="1" alignment="left" id="1RS-Fw-qp2">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <separator alignment="left" alpha="0.29999999999999966" id="aXD-Iq-pIQ"/>
+                        <label width="1" alignment="left" id="YbX-Lp-yTc">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <separator alignment="left" alpha="0.29999999999999966" id="g1w-84-Pha"/>
+                        <label width="1" alignment="left" id="MkQ-ZP-0Nq">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <separator alignment="left" alpha="0.29999999999999966" id="kLa-11-DMP"/>
+                        <button width="1" alignment="left" title="Neu Laden" id="PXl-RW-Y4F">
+                            <connections>
+                                <action selector="refresh" destination="AgC-eL-Hgc" id="rP6-OI-FMl"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="JahrLabel" destination="MkQ-ZP-0Nq" id="cD0-yM-to8"/>
+                        <outlet property="LeistungLabel" destination="q1B-eg-7hL" id="P9O-kZ-ATx"/>
+                        <outlet property="MonatLabel" destination="YbX-Lp-yTc" id="Pmm-6v-par"/>
+                        <outlet property="SolarViewLabel" destination="2x2-hZ-2R0" id="des-CR-NAr"/>
+                        <outlet property="TagLabel" destination="1RS-Fw-qp2" id="ROZ-C8-YVV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="SolarView" id="svx-kA-MxM">
+                                    <color key="textColor" red="1" green="0.84940811835421881" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group alignment="left" id="uCw-4Q-Ouw">
+                            <items>
+                                <label width="1" height="1" alignment="center" text="Label" textAlignment="center" numberOfLines="8" id="IIT-e9-Bbf">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="13"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="GlanceLabel" destination="svx-kA-MxM" id="Cs8-sv-pFr"/>
+                        <outlet property="TextLabel" destination="IIT-e9-Bbf" id="51B-d5-0oE"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+    </scenes>
+</document>
